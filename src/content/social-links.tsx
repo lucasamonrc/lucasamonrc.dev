@@ -13,7 +13,7 @@ const socialLinks = [
     ),
   },
   {
-    url: "https://blog.lucasamonrc.dec",
+    url: "https://blog.lucasamonrc.dev",
     icon: (
       <SiSubstack className="w-5 h-5 hover:text-orange-500 transition-colors" />
     ),
