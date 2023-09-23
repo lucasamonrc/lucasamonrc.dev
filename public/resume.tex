@@ -1,0 +1,224 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Lucas Castro} \\ \vspace{1pt}
+    \small (385) 295-0754 $|$ \href{mailto:lucasamonrc@gmail.com}{\underline{lucasamonrc@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/lucasamonrc}{\underline{linkedin.com/in/lucasamonrc}} $|$
+    \href{https://github.com/lucasamonrc}{\underline{github.com/lucasamonrc}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{Feb 2023 -- Present}
+      {Trinsic}{Remote, US}
+      \resumeItemListStart
+        \resumeItem{Implemented and maintained features for a platform as a service product for verifiable credentials}
+        \resumeItem{Improved the user dashboard navigation according to design prototypes using React and TypeScript}
+        \resumeItem{Launched a brand new product offering leveraging internal APIs as microservices}
+        \resumeItem{Maintained and extended back-end features on a large enterprise software written in C\# with ASP.NET}
+        \resumeItem{Wrote API references, user guides, example apps, and automated tests to document platform key features}
+        \resumeItem{Discussed daily project updates in agile stand-up meetings with a cross-functional development team}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Engineer, Internship}{May 2022 -- Aug 2022}
+      {Pluralsight}{Draper, UT}
+      \resumeItemListStart
+        \resumeItem{Developed experimental features for user onboarding experience on the Pluralsight platform}
+        \resumeItem{Leveraged internal APIs to complete the development of a unfinished notification widget}
+        \resumeItem{Patched software dependencies and refactored codebase to reduce security vulnerabilities by 65\%}
+        \resumeItem{Migrated 100\% of a React component library written in JavaScript to TypeScript}
+        \resumeItem{Engaged with lean software development in a cross-functional development team}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Programmer}{Jun 2020 -- Aug 2021}
+      {Utah County Government}{Provo, UT}
+      \resumeItemListStart
+        \resumeItem{Implemented a demographic ETL system capable of parsing over 120,000 rows of data per day}
+        \resumeItem{Wrote an application for project estimation using a simple prediction algorithm with 90\% accuracy}
+        \resumeItem{Developed a cloud-based appointment scheduling system used by over 250,000 patients}
+        \resumeItem{Increased test coverage of a large web application by 60\% with an end-to-end testing framework}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {QA Engineer, Internship}{Apr 2020 -- Aug 2020}
+      {Utah County Government}{Provo, UT}
+      \resumeItemListStart
+        \resumeItem{Developed and executed of test plans, cases, and scripts to ensure the quality of software product}
+        \resumeItem{Conducted thorough manual testing of a large-scale web application}
+        \resumeItem{Collaborated with engineers to reproduce reported issues and assist in their resolution}
+        \resumeItem{Documented test procedures, test results, and test logs clearly and comprehensively}
+        \resumeItem{Authored an end-to-end test automation framework using C\# and Selenium}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Ryde Schedule SMS} $|$ \emph{Python, AWS, Twilio}}{Dec 2022 - Jan 2023}
+          \resumeItemListStart
+            \resumeItem{Integrated a web-scraper and AWS lambdas to implement an on-demand bus schedule SMS service.}
+            \resumeItem{Leveraged Twilio SMS Service to trigger a webhook set up through AWS lambda}
+            \resumeItem{Developed a web-scraper in Python to scrape BYU's Ryde service webpage to feed into a json file stored in AWS s3}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Herald} $|$ \emph{TypeScript, React, Tailwind CSS, GraphQL}}{Dec 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack application with TypeScript and React using the Next.js framework}
+            \resumeItem{Implemented social authentication with GitHub OAuth}
+            \resumeItem{Leveraged third-party services to integrate payments and content management}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Python, SQL, C\#, Java, C} \\
+     \textbf{Technologies}{: React, Node.js, Flask, Tailwind CSS, GraphQL, ASP.NET, MongoDB, DynamoDB} \\
+     \textbf{Cloud}{: AWS, Microsoft Azure, Firebase, GitHub Actions, Docker} \\
+     \textbf{Practices}{: Automated Tests, CI/CD, Agile, Microservices, Technical Writing, UX Design}
+    }}
+ \end{itemize}
+
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Brigham Young University}{Provo, UT}
+      {Bachelor of Science in Computer Science}{Apr. 2021 -- Apr 2023}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
