@@ -22,6 +22,7 @@ async function getData() {
   const response = await fetch(
     "https://api.github.com/users/lucasamonrc/repos?direction=desc&sort=pushed&page=1&per_page=3",
     {
+      cache: "no-cache",
       headers: {
         Authorization: `Bearer ${process.env.GITHUB_API_TOKEN}`,
       },
