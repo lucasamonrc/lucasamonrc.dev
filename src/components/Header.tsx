@@ -8,8 +8,11 @@ export function Header() {
           <li className="px-3 py-2 font-medium text-zinc-900 cursor-pointer hover:text-sky-600 transition-colors text-sm">
             <Link href="/">Home</Link>
           </li>
-          <li className="px-3 py-2 font-medium text-zinc-900 cursor-pointer hover:text-sky-600 transition-colors text-sm">
+          {/* <li className="px-3 py-2 font-medium text-zinc-900 cursor-pointer hover:text-sky-600 transition-colors text-sm">
             <a href="https://blog.lucasamonrc.dev">Articles</a>
+          </li> */}
+          <li className="px-3 py-2 font-medium text-zinc-900 cursor-pointer hover:text-sky-600 transition-colors text-sm">
+            <Link href="/talks">Talks</Link>
           </li>
           <li className="px-3 py-2 font-medium text-zinc-900 cursor-pointer hover:text-sky-600 transition-colors text-sm">
             <a href="https://github.com/lucasamonrc?tab=repositories">

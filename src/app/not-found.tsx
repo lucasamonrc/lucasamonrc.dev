@@ -5,15 +5,6 @@ export const metadata: Metadata = {
   title: "Lucas Castro | Not Found",
 };
 
-interface Repo {
-  name: string;
-  id: number;
-  html_url: string;
-  description: string;
-  pushed_at: string;
-  language: string | null;
-}
-
 export default function Custom404() {
   return (
     <main className="md:px-12 px-4 lg:px-24 flex flex-col gap-16">

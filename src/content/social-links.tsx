@@ -12,12 +12,12 @@ const socialLinks = [
       <FaLinkedin className="w-5 h-5 hover:text-sky-600 transition-colors" />
     ),
   },
-  {
-    url: "https://blog.lucasamonrc.dev",
-    icon: (
-      <SiSubstack className="w-5 h-5 hover:text-orange-500 transition-colors" />
-    ),
-  },
+  // {
+  //   url: "https://blog.lucasamonrc.dev",
+  //   icon: (
+  //     <SiSubstack className="w-5 h-5 hover:text-orange-500 transition-colors" />
+  //   ),
+  // },
 ];
 
 export default socialLinks;
