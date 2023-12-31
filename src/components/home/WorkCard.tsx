@@ -56,8 +56,8 @@ export function WorkCard() {
 
       <a
         className="mt-6 flex items-center justify-center gap-1 bg-zinc-100 rounded-lg w-full px-3 py-2 text-sm text-zinc-800 font-medium hover:brightness-90 transition"
-        href="/lucas-castro-resume.pdf"
-        download
+        href="https://standardresume.co/r/lucasamonrc"
+        target="_blank"
       >
         Download Resume
         <FiArrowDown />
