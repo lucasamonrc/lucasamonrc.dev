@@ -22,20 +22,24 @@ export default function Talks() {
             {content.map((talk) => (
               <li className="text-sm" key={talk.id}>
                 <a
-                  href={talk.video}
+                  href={talk.video ?? talk.notes}
                   className="text-sky-600 font-medium mr-3 text-base transition-colors hover:text-sky-800"
                   target="_blank"
                 >
                   {talk.title}
                 </a>
-                <span>|</span>
-                <a
-                  href={talk.notes}
-                  className="ml-3 text-sm underline text-sky-600"
-                  target="_blank"
-                >
-                  Talk notes
-                </a>
+                {!!talk.video && (
+                  <>
+                    <span>|</span>
+                    <a
+                      href={talk.notes}
+                      className="ml-3 text-sm underline text-sky-600"
+                      target="_blank"
+                    >
+                      Talk notes
+                    </a>
+                  </>
+                )}
               </li>
             ))}
           </ul>
